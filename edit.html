@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Edit</title>
+    <link rel="stylesheet" href="css\materialize.css">
+    <link rel="stylesheet" href="css\custom.css">
+    <style>
+        body {
+            background-color: #1f2833;
+        }
+        #display-area{
+            color: white;
+        }
+        #snd-btn{
+            width: 500px;
+            height: 50px;
+            font-size: 20px;
+            background-color: #66FCF1;
+            color: #1f2833;
+        }
+        #snd-btn:hover{
+            background-color:  #1f2833;
+            color: white;
+        }
+    </style>
+</head >
+
+<body onload="update();">
+    <div class="row">
+    <!-- First Column | Side Nav    -->
+        <div class="col s4 m4">
+        <ul id="slide-out" class="sidenav sidenav-fixed">
+            <li><a><h5>My ToDo Application</h5></a></li>
+            <br>
+            <br>
+            <div class="container">
+                <li><a href="index.html"><img src="images\task.png" height="25"> &nbsp; All ToDos</a></li>
+                <li><a href="create.html"><img src="images\create.png" height="20">&nbsp;&nbsp;&nbsp; Create</a></li>
+                <li><a href="Edit.html"><img src="images\resume.png" height="25">&nbsp;&nbsp; Edit</a></li>
+                <li><a href="display.html"><img src="images\resume.png" height="25">&nbsp;&nbsp; Display</a></li>
+            </div>
+        </ul>
+
+        <!-- Second Column | Display Area -->
+        </div>
+        <div id="display-area" class="col s8 m8">
+            <br>
+            <h4 align="center">Update a  Todo</h4>
+            <br>
+            <br>
+            <br>
+            <br>   
+            <form align="center" action="index.html" onsubmit="return update1();" >
+                <label for="text">
+                    <img src="images\pen.png" height="30">
+                    &nbsp;&nbsp;&nbsp;
+                    <input required type="text" id="title" class="title" maxlength="50" minlength="5" placeholder="Title">
+                    <br>
+                    <br>
+                    <br>
+                    <img src="images\pin.png" height="30">
+                    &nbsp;&nbsp;&nbsp;
+                    <input required type="text" id="location" class="title" maxlength="50" minlength="5" placeholder="Location">
+                    <br>
+                    <br>
+                    <br>
+                    <img src="images\task.png" height="30">
+                    &nbsp;&nbsp;&nbsp;
+                    <input required type="text" id="description" class="title" maxlength="50" minlength="5" placeholder="Description">
+                </label>
+                <br>
+                <br>
+                <br>
+                <button id="snd-btn" class="btn waves-effect waves-light" type="submit" name="action">Update</button>
+            </form>
+        </div>
+    </div>
+    
+    
+    <!-- Floating Button -->
+    <div class="fixed-action-btn">
+        <a href="create.html" class="btn-floating btn-medium">+</a>
+    </div>
+
+    <script src="js/materialize.js"></script>
+    <script src="js/edit.js"></script>
+</body>
+
+</html>

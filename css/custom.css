@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'abelregular';
+    src: url('fonts/abel-webfont.woff2') format('woff2'),
+         url('fonts/abel-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+ }
+.sidenav{
+    width: 400px;
+    background-color: #0b0c10;
+    color: white !important;
+}
+.sidenav > li > a{
+ color: white
+}
+
+.sidenav > div > li > a{
+    color: white;
+    font-size: 16px;
+    padding: 5px;
+}
+.sidenav > div > li > a:hover{
+    background-color: rgb(73, 189, 181);
+    color: black;
+    font-size: 16px;
+}
+.fixed-action-btn > a{
+    background-color: #66FCF1;
+    color: #1F2833;
+    font-size: 30px;
+    position: relative;
+    bottom: 10px;
+    font-weight: bold;
+    text-indent: 10px;
+}
+.fixed-action-btn > a:hover{
+    background-color: #1F2833;
+    color: white;
+}
+form{
+    margin: 0 auto 0 auto !important;
+}
+
+.title{
+    width: 600px  !important;
+    text-indent: 40px !important;
+    color: white;
+    border-bottom-color: white !important;
+}
+   

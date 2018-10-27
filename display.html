@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Display</title>
+    <link rel="stylesheet" href="css\materialize.css">
+    <link rel="stylesheet" href="css\custom.css">
+    <style>
+        body{
+            background-color: rgb(202, 54, 0);
+        }
+        #display-area{
+            color: white;
+        }
+        .todo{
+            text-indent: 40px;
+            height: auto;
+            width: 700px;
+            background-color: #f7b733;
+            margin-bottom: 10px;
+            padding: 35px;
+            border-radius: 5px;
+            border: 0.5px solid white;
+        }
+
+        .display{
+            background-color:#373737c7;
+            border-radius: 5px;
+            border: 0.5px solid white;
+            margin: 2px auto;
+        }
+        .title{
+            color: white;
+            font-size: 24px;
+        }
+        .desc{
+            color: white;  
+        }
+        .cstm{
+            background-color: #373737c7;
+            position: relative;
+            top: 20px;
+            left: 520px;
+        }
+        .cstm:hover{
+            background-color: #0b0c10;
+        }
+
+    </style>
+</head>
+<body onload="display();">
+   <div class="row">
+    <!-- First Column | Side Nav    -->
+        <div class="col s4">
+        <ul id="slide-out" class="sidenav sidenav-fixed">
+            <li><a><h5>My ToDo Application</h5></a></li>
+            <br>
+            <br>
+            <div class="container">
+                    <li><a href="index.html"><img src="images/task.png" height="25"> &nbsp; All ToDos</a></li>
+                    <li><a href="create.html"><img src="images/create.png" height="20">&nbsp;&nbsp;&nbsp; Create</a></li>
+                    <li><a href="Edit.html"><img src="images/resume.png" height="25">&nbsp;&nbsp; Edit</a></li>
+                    <li><a href="display.html"><img src="images/resume.png" height="25">&nbsp;&nbsp; Display</a></li>
+            </div>
+        </ul>
+        <!-- Second Column | Display Area -->
+        </div>
+        <div id="display-area" class="col s8">
+            <br>
+            <h4 >Your ToDos</h4>
+            <br>
+            <div id="todo5" class="todo">
+            
+                <div class="display" >
+                    <p class="title">Title</p>
+                    <p class="desc" id="title">Hello</p>
+                    
+                </div>
+                <div class="display" >
+                    <p class="title">Location</p>
+                    <p class="desc" id="location">Hello</p>
+                    
+                </div>
+                <div class="display" >
+                    <p class="title">Description</p>
+                    <p class="desc" id="description">Hello</p>
+                    
+                </div>
+                <div>
+                    <button class="btn block btn-normal cstm" onclick="location.href='index.html';">Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- Floating Button -->
+   <div  class="fixed-action-btn">
+       <a href="create.html" class="btn-floating btn-mdeium">+</a>
+   </div>
+
+    <script src="js/materialize.js"></script>
+    <script src="js/display.js"></script>
+</body>
+</html>

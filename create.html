@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Create</title>
+    <link rel="stylesheet" href="css\materialize.css">
+    <link rel="stylesheet" href="css\custom.css">
+    <style>
+        body{
+            background-color: #123c69
+
+        }
+        #display-area{
+            color: white;
+        }
+        #snd-btn{
+            width: 500px;
+            height: 50px;
+            font-size: 20px;
+            background-color: #1f2833;
+        }
+        #snd-btn:hover{
+            background-color: #66FCF1;
+            color: #1f2833;
+        }
+        #msg-btn{
+            position: relative;
+            top: 20px;
+            width: 50px;
+            height: 50px;
+            font-size: 20px;
+            background-color: #1f2833;
+        }
+        #msg-btn:hover{
+            background-color: #66FCF1;
+            color: #1f2833;
+        }
+        .visible{
+            visibility: visible;
+        }
+        .invisible{
+            visibility: hidden;
+        }
+        .msg{
+            text-align: center;
+            position: absolute;
+            bottom: 300px;
+            visibility: hidden;
+            left: 700px;
+            height: 100px;
+            width: 300px;
+            padding: 30px;
+            background-color: #1f2833b7;
+            border: .5px solid rgb(230, 227, 227);
+            border-radius: 5px;
+
+
+        }
+    </style>
+</head>
+
+<body >
+    <div class="row">
+    <!-- First Column | Side Nav    -->
+        <div class="col s4">
+        <ul id="slide-out" class="sidenav sidenav-fixed">
+            <li><a><h5>My ToDo Application</h5></a></li>
+            <br>
+            <br>
+            <div class="container">
+                <li><a href="index.html"><img src="images\task.png" height="25"> &nbsp; All ToDos</a></li>
+                <li><a href="create.html"><img src="images\create.png" height="20">&nbsp;&nbsp;&nbsp; Create</a></li>
+                <li><a href="Edit.html"><img src="images\resume.png" height="25">&nbsp;&nbsp; Edit</a></li>
+                <li><a href="display.html"><img src="images\resume.png" height="25">&nbsp;&nbsp; Display</a></li>
+            </div>
+        </ul>
+        </div>
+    <!-- Second Column | Display Area -->
+        <div id="display-area" class="col s8">
+            <br>
+            <h4 align="center">Add a new Todo</h4>
+            <br>
+            <br>
+            <br>
+
+            <br>   
+            <form align="center" action="index.html" onsubmit="return store();">
+                <label for="text">
+                    <img src="images\pen.png" height="30">&nbsp;&nbsp;&nbsp;
+                    <input required type="text" id="todoName" class="title" maxlength="50" minlength="5" placeholder="Title">
+                    <br>
+                    <br>
+                    <br>
+                    <img src="images\pin.png" height="30">&nbsp;&nbsp;&nbsp;
+                    <input required type="text" id="todoLoc" class="title" maxlength="50" minlength="5" placeholder="Location">
+                    <br>
+                    <br>
+                    <br>
+                    <img src="images\task.png" height="30">&nbsp;&nbsp;&nbsp;
+                    <input required type="text" id="todoDesc" class="title" maxlength="50" minlength="5" placeholder="Description">
+                </label>
+                <br>
+                <br>
+                <br>
+                <button id="snd-btn"   class="btn waves-effect waves-light" type="submit" name="action">Create</button>
+                <!-- <input type="submit" value="submit"> -->
+            </form>
+        </div>
+    </div>
+    
+    <!-- Floating Button -->
+    <div  class="fixed-action-btn">
+        <a href="create.html" class="btn-floating btn-medium">+</a>
+    </div>
+
+    <script src="js\materialize.js"></script>
+    <script src="js\create.js"></script>
+</body>
+
+</html>
